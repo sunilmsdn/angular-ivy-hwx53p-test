@@ -2,8 +2,8 @@ import { Component, VERSION } from '@angular/core';
 import {Employee} from './emp';
 @Component({
   selector: 'my-app',
- template:`<h1> Hi {{name}} <br/> {{num}} </h1> <br/>
-  <li appHighlighter *ngFor='let e of emp' >{{e.name}}</li>`
+ template:`<h1 appHighlighter> Hi {{name}} <br/> {{num}} </h1> <br/>
+  <li  *ngFor='let e of emp' >{{e.name}}</li>`
 })
 export class AppComponent  {
   name:string="sunil";
