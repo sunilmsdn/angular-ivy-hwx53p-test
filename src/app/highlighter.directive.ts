@@ -10,6 +10,6 @@ export class HighlighterDirective {
   {this.el.nativeElement.style.backgroundColor="blue";}
 
    @HostListener('mouseleave') onMouseLeave()
-  {this.el.nativeElement.style.backgroundColor="red";}
+  {this.el.nativeElement.style.backgroundColor="green";}
 
 }
