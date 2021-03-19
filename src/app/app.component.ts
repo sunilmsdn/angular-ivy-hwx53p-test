@@ -2,10 +2,13 @@ import { Component, VERSION } from '@angular/core';
 import {Employee} from './emp';
 @Component({
   selector: 'my-app',
- template:`<h1 appHighlighter> Hi {{name}} <br/> {{num}} </h1> <br/>
-  <li  *ngFor='let e of emp' >{{e.name}}</li>`
+ templateUrl:`app.component.html`
 })
 export class AppComponent  {
+  title:string="my bilt in pipe example";
+  todaDate:Date =new Date();
+  oldDate: any=new Date("March 12,2021 10:20:20");
+  numArra:number[]=[1,2,3,4,5,6,7,8,9,0];
   name:string="sunil";
   num:Number=30;
 
